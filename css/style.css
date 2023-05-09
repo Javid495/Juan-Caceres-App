@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 400;
+}
+html {
+    height:100% ;
+}
+body{
+    min-height: 100%;
+}
+#Barra{
+    background-image: url(../images/giphy.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.grid-container > * {
+    /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75); */
+    border-radius: 4px; 
+}
+.header{
+    grid-area: header;
+}
+.menu{
+    grid-area: menu;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+
+.grid-container{
+    display: grid;
+    gap:10px;
+    grid-template:
+    "header"
+    "menu"
+    "main"
+    "footer"
+    ;
+}
+@media (min-width:600px){
+    .grid-container{
+        grid-template: 
+        "header header" 100px
+        "menu" 10px
+        "main" auto
+        "footer footer" 100px      
+        ;
+    }
+}  
+
+#tarjeta{
+    padding: 20px;
+}
+.botones{
+    padding: 10px;
+    text-align: center;
+}
+
+#reclutas{
+    padding: 20px;
+    gap: 10px;
+    text-align: left;
+}
+#reclutas2{
+    padding: 20px;
+    gap: 10px;
+    text-align: left;
+}
+#reclutas3{
+    padding: 20px;
+    gap: 10px;
+    text-align: left;
+}
+.titulo{
+    padding-top:10px; 
+}
+.pre{
+    text-align: center;
+}
+
+.imagena{
+    display: flex;
+}

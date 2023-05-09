@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/958219.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bostrapp/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <script src="js/jquery-3.6.4.slim.js.js" defer></script>
+    <script src="js/boostrap/bootstrap.js" defer></script>
+    <script src="app/app.js" type="module" defer></script>
+    <script src="js/guardarRecluta.js" type="module" defer></script>
+    <title>Document</title>
+</head>
+<body class="grid-container">
+    <div class="header">
+        <nav-bar-menu></nav-bar-menu>
+    </div>
+    <div class="menu">
+        <div class="container">
+            <div class="card"  id="tarjeta">
+                <div class="container text-left">
+                    <form id="formulario">
+                        <div class="row justify-content-start">
+                            <div>
+                                <p>A que Team pertenecera el recluta?</p>
+                                <select class="form-select" id="seleccionTeam" aria-label="Default select example">
+                                    <option value="">Seleccione</option>
+                                    <option value="Team1">Team #1</option>
+                                    <option value="Team2">Team #2</option>
+                                    <option value="Team3">Team #3</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                              <label for="id" class="form-label">Id: </label>
+                              <input type="number" class="form-control" id="id" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-4">
+                                <label for="nombre" class="form-label">Nombre: </label>
+                                <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-4">
+                                <label for="edad" class="form-label">Edad: </label>
+                                <input type="number" class="form-control" id="edad" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="row justify-content-start">
+                            <div class="col-4">
+                              <label for="telefono" class="form-label">Telefono: </label>
+                              <input type="tel" class="form-control" id="telefono" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-4">
+                                <label for="email" class="form-label">Email: </label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-4">
+                                <label for="direccion" class="form-label">Direccion: </label>
+                                <input type="text" class="form-control" id="direccion" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="row justify-content-start">
+                            <div class="col-4">
+                              <label for="fechaNacimiento" class="form-label">fecha de Nacimiento: </label>
+                              <input type="date" class="form-control" id="fechaNacimiento" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-4">
+                                <label for="NumeroId" class="form-label">Numero de Identificacion: </label>
+                                <input type="text" class="form-control" id="NumeroId" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-4">
+                                <label for="fechaIngreso" class="form-label">Fecha de Ingreso: </label>
+                                <input type="date" class="form-control" id="fechaIngreso" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="botones">
+                            <button type="submit" id="guardar" class="btn btn-outline-success">Submit</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="main"></div>
+    <div class="footer"></div>
+</body>
+</html>
